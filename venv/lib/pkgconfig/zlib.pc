@@ -1,0 +1,13 @@
+prefix=/Users/dhruvshrinet/Desktop/ML_pipeline/venv
+exec_prefix=/Users/dhruvshrinet/Desktop/ML_pipeline/venv
+libdir=/Users/dhruvshrinet/Desktop/ML_pipeline/venv/lib
+sharedlibdir=/Users/dhruvshrinet/Desktop/ML_pipeline/venv/lib
+includedir=/Users/dhruvshrinet/Desktop/ML_pipeline/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
