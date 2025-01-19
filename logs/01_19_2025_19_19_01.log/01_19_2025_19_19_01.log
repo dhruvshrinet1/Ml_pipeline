@@ -1,0 +1,8 @@
+[2025-01-19 19:19:02,842] INFO Entered the data ingestion method or component
+[2025-01-19 19:19:02,845] INFO Exported the data 
+[2025-01-19 19:19:02,847] INFO Train test split initiated
+[2025-01-19 19:19:02,851] INFO Data ingestion completed successfully
+[2025-01-19 19:19:02,851] INFO Entered the data transformation method or component
+[2025-01-19 19:19:02,852] INFO Categorical and numerical pipelines created
+[2025-01-19 19:19:02,853] INFO Applying preprocessing object on training and test data
+[2025-01-19 19:19:02,858] INFO Data transformation completed successfully

@@ -7,6 +7,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 
 from dataclasses import dataclass
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
+from src.components.model_trainer import ModelTrainer,ModelTrainerConfig
 
 @dataclass
 class DataIngestionConfig:
@@ -43,5 +46,10 @@ class DataIngestion:
 
 if __name__== '__main__':
     obj = DataIngestion()
-    obj.initiate_data_ingestion()  # calling the method to initiate data ingestion
-
+    train_data,test_data = obj.initiate_data_ingestion()  # calling the method to initiate data ingestion
+    
+    data_transformation = DataTransformation()
+    train_array,test_arr,_=data_transformation.initiate_data_transformation(train_data, test_data)  # calling the method to initiate data transformation
+    
+    modeltrainer = ModelTrainer()
+    modeltrainer.initiate_model_trainer(train_array,test_arr)
